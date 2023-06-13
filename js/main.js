@@ -24,16 +24,18 @@ const parrafos = document.querySelectorAll(".parrafo");
 // contenido.remove();
 // parrafos[2].remove();
 
-const productos = ["sillon", "silla", "mesa", "ventana"];
+const productos = ["sillon", "silla", "mesa", "ventana", "escalera"];
 
 let lista = document.createElement("ul");
-lista.classList.add("lista");
-lista.innerHTML = "<li class = 'lista-item'>" + productos[0] + "</li>";
-lista.innerHTML += "<li class = 'lista-item'>" + productos[1] + "</li>";
+// lista.classList.add("lista");
+// lista.innerHTML = "<li class = 'lista-item'>" + productos[0] + "</li>";
+// lista.innerHTML += "<li class = 'lista-item'>" + productos[1] + "</li>";
 
-lista.innerHTML += `<li class = "lista-item" >${productos[2]}</li>`;
+// lista.innerHTML += `<li class = "lista-item" >${productos[2]}</li>`;
 
+for (producto of productos) {
+  lista.innerHTML += `<li class = "lista-item" >${producto} </li>`
+}
 
 contenido.append(lista);
 
-console.log(lista);
