@@ -14,4 +14,9 @@ const parrafos = document.querySelectorAll(".parrafo");
 // contenido.classList.remove("prueba2");
 // console.log(contenido.classList);
 
-contenido.className = "prueba3 prueba4";
+// contenido.className = "prueba3 prueba4";
+
+console.log(contenido.innerHTML);
+console.log(contenido.innerText);
+
+parrafos[0].innerHTML = "Hola mundo! <a href= '#' >Esto es un enlace</a>"
