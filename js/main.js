@@ -24,12 +24,15 @@ const parrafos = document.querySelectorAll(".parrafo");
 // contenido.remove();
 // parrafos[2].remove();
 
+const productos = ["sillon", "silla", "mesa", "ventana"];
+
 let lista = document.createElement("ul");
 lista.classList.add("lista");
-lista.innerHTML = "<li class 'lista-item'>item 1</li>";
-lista.innerHTML += "<li class 'lista-item'>item 2</li>";
-lista.innerHTML += "<li class 'lista-item'>item 3</li>";
-lista.innerHTML += "<li class 'lista-item'>item 4</li>";
+lista.innerHTML = "<li class = 'lista-item'>" + productos[0] + "</li>";
+lista.innerHTML += "<li class = 'lista-item'>" + productos[1] + "</li>";
+
+lista.innerHTML += `<li class = "lista-item" >${productos[2]}</li>`;
+
 
 contenido.append(lista);
 
