@@ -16,7 +16,21 @@ const parrafos = document.querySelectorAll(".parrafo");
 
 // contenido.className = "prueba3 prueba4";
 
-console.log(contenido.innerHTML);
-console.log(contenido.innerText);
+// console.log(contenido.innerHTML);
+// console.log(contenido.innerText);
 
-parrafos[0].innerHTML = "Hola mundo! <a href= '#' >Esto es un enlace</a>"
+// parrafos[0].innerHTML = "Hola mundo! <a href= '#' >Esto es un enlace</a>"
+
+// contenido.remove();
+// parrafos[2].remove();
+
+let lista = document.createElement("ul");
+lista.classList.add("lista");
+lista.innerHTML = "<li class 'lista-item'>item 1</li>";
+lista.innerHTML += "<li class 'lista-item'>item 2</li>";
+lista.innerHTML += "<li class 'lista-item'>item 3</li>";
+lista.innerHTML += "<li class 'lista-item'>item 4</li>";
+
+contenido.append(lista);
+
+console.log(lista);
